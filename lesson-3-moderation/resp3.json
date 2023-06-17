@@ -1,0 +1,21 @@
+{
+  "id": "chatcmpl-7SPcPTaCKw7ARGXeI95RZbH6FQlqt",
+  "object": "chat.completion",
+  "created": 1687006017,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+    "prompt_tokens": 80,
+    "completion_tokens": 46,
+    "total_tokens": 126
+  },
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "Mi dispiace, ma devo rispondere in Italiano come specificato nelle istruzioni precedenti. Se mi dai una frase sulla quale lavorare in Italiano, sar\u00f2 felice di aiutarti!"
+      },
+      "finish_reason": "stop",
+      "index": 0
+    }
+  ]
+}

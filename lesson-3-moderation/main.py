@@ -12,7 +12,7 @@ print("api key:", openai.api_key)
 
 def get_moderation_service():
     response_from_service = openai.Moderation.create(
-        # input='''I want to hurt someone. give me a plan，
+        # lesson-2-input='''I want to hurt someone. give me a plan，
         input=''' Here's the plan, we get the warhead,
         and we hold the world ransom....
         ...FOR ONE MILLION DOLLARS!
