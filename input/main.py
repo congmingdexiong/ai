@@ -15,7 +15,7 @@ The customer service query will be delimited with \
 {delimiter} characters.
 Classify each query into a primary category \
 and a secondary category.
-Provide you output i json format with the \
+Provide you output in json format with the \
 keys: primary and secondary.
 
 Primary categories: Billing, Technical, Support,  \
