@@ -1,0 +1,4 @@
+{
+  "primary": "Account Management",
+  "secondary": "Close account"
+}
