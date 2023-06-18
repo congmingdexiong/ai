@@ -1,0 +1,21 @@
+{
+  "id": "chatcmpl-7Sbze0vt70hPRGRPHHW4uwGEkaX1C",
+  "object": "chat.completion",
+  "created": 1687053586,
+  "model": "gpt-3.5-turbo-0301",
+  "usage": {
+    "prompt_tokens": 768,
+    "completion_tokens": 77,
+    "total_tokens": 845
+  },
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "Step 1:#### The customer is asking if the store sells TVs.\n\nStep 2:#### As per the available product list, there are no TVs available for sale.\n\nResponse to the user:#### I'm sorry, but we do not sell TVs at the moment. Please let us know if you have any other questions or if there is anything else we can help you with."
+      },
+      "finish_reason": "stop",
+      "index": 0
+    }
+  ]
+}
