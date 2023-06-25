@@ -91,3 +91,36 @@ customer_msg_0 = f"""Which TV can I buy if I'm on a budget?"""
 products_by_category_0 = find_category_and_product_v2(customer_msg_0,
                                                       products_and_category)
 print(products_by_category_0)
+
+# 第二个评估的查询
+customer_msg_1 = f"""I need a charger for my smartphone"""
+
+products_by_category_1 = find_category_and_product_v2(customer_msg_1,
+                                                      products_and_category)
+print(products_by_category_1)
+
+
+# 第三个评估查询
+customer_msg_2 = f"""
+What computers do you have?"""
+
+products_by_category_2 = find_category_and_product_v2(customer_msg_2,
+                                                      products_and_category)
+print(products_by_category_2)
+
+# 第四个查询，更复杂
+customer_msg_3 = f"""
+tell me about the smartx pro phone and the fotosnap camera, the dslr one.
+Also, what TVs do you have?"""
+
+products_by_category_3 = find_category_and_product_v2(customer_msg_3,
+                                                      products_and_category)
+print(products_by_category_3)
+
+customer_msg_4 = f"""
+tell me about the CineView TV, the 8K one, Gamesphere console, the X one.
+I'm on a budget, what computers do you have?"""
+
+products_by_category_4 = find_category_and_product_v2(customer_msg_4,
+                                                      products_and_category)
+print(products_by_category_4)
