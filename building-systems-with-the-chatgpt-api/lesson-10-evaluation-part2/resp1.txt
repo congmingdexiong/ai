@@ -1,0 +1,24 @@
+- Is the Assistant response based only on the context provided? (Y or N)
+
+  Y
+
+- Does the answer include information that is not provided in the context? (Y or N)
+
+  N
+
+- Is there any disagreement between the response and the context? (Y or N)
+
+  N
+
+- Count how many questions the user asked. (output a number)
+
+  2
+
+- For each question that the user asked, is there a corresponding answer to it?
+
+  Question 1: Y
+  Question 2: Y
+
+- Of the number of questions asked, how many of these questions were addressed by the answer? (output a number)
+
+  2

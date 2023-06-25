@@ -1,0 +1,30 @@
+{'Computers and Laptops': ['TechPro Ultrabook', 'BlueWave Gaming Laptop', 'PowerLite Convertible', 'TechPro Desktop', 'BlueWave Chromebook'], 'Smartphones and Accessories': ['SmartX ProPhone', 'MobiTech PowerCase', 'SmartX MiniPhone', 'MobiTech Wireless Charger', 'SmartX EarBuds'], 'Televisions and Home Theater Systems': ['CineView 4K TV', 'SoundMax Home Theater', 'CineView 8K TV', 'SoundMax Soundbar', 'CineView OLED TV'], 'Gaming Consoles and Accessories': ['GameSphere X', 'ProGamer Controller', 'GameSphere Y', 'ProGamer Racing Wheel', 'GameSphere VR Headset'], 'Audio Equipment': ['AudioPhonic Noise-Canceling Headphones', 'WaveSound Bluetooth Speaker', 'AudioPhonic True Wireless Earbuds', 'WaveSound Soundbar', 'AudioPhonic Turntable'], 'Cameras and Camcorders': ['FotoSnap DSLR Camera', 'ActionCam 4K', 'FotoSnap Mirrorless Camera', 'ZoomMaster Camcorder', 'FotoSnap Instant Camera']}
+示例 0
+0: 1.0
+示例 1
+1: 1.0
+示例 2
+2: 1.0
+示例 3
+错误
+产品集合: {'CineView 8K TV', 'CineView 4K TV', 'CineView OLED TV'}
+标准的产品集合: {'CineView 8K TV', 'SoundMax Soundbar', 'CineView 4K TV', 'CineView OLED TV', 'SoundMax Home Theater'}
+回答是标准答案的一个子集
+3: 0.6666666666666666
+示例 4
+4: 1.0
+示例 5
+5: 1.0
+示例 6
+6: 1.0
+示例 7
+错误
+产品集合: {'GameSphere VR Headset', 'ProGamer Controller', 'ProGamer Racing Wheel'}
+标准的产品集合: {'GameSphere VR Headset', 'GameSphere Y', 'ProGamer Racing Wheel', 'ProGamer Controller', 'GameSphere X'}
+回答是标准答案的一个子集
+7: 0.0
+示例 8
+8: 1.0
+示例 9
+9: 1
+正确比例为 10: 0.8666666666666666
