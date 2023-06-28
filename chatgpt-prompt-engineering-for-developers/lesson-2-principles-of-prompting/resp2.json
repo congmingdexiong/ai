@@ -1,0 +1,17 @@
+[
+  {
+    "supermarket_name": "Walmart",
+    "creator": "Sam Walton",
+    "num_of_emp": 2.3e+06
+  },
+  {
+    "supermarket_name": "Kroger",
+    "creator": "Bernard Kroger",
+    "num_of_emp": 4.4e+05
+  },
+  {
+    "supermarket_name": "Albertsons",
+    "creator": "Joe Albertson",
+    "num_of_emp": 2.7e+05
+  }
+]

@@ -1,0 +1,8 @@
+Completion for prompt 1:
+1 - Jack and Jill go on a quest to fetch water from a well, but misfortune strikes as they both tumble down the hill, yet their adventurous spirits remain undimmed.
+2 - Jack et Jill partent chercher de l'eau d'un puits, mais ils tombent tous les deux, leur esprit d'aventure reste intact.
+3 - Jack, Jill.
+4 - {
+     "french_summary": "Jack et Jill partent chercher de l'eau d'un puits, mais ils tombent tous les deux, leur esprit d'aventure reste intact.",
+     "num_names": 2
+   }
