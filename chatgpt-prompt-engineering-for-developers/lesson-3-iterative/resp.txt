@@ -64,7 +64,7 @@ Product IDs: SWC-100, SWC-110
       <td>31.50"</td>
     </tr>
     <tr>
-      <td>Seat Height</td>
+      <td>Seat Height</td>-
       <td>17.32"</td>
     </tr>
     <tr>
