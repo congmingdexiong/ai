@@ -1,0 +1,4 @@
+['style', 'text']
+<class 'list'>
+<class 'langchain.schema.messages.HumanMessage'>
+content="I'm really frustrated that my blender lid flew off and made a mess of my kitchen walls with smoothie! And to make things even worse, the warranty doesn't cover the cost of cleaning up my kitchen. I could really use your help at this moment, my friend!" additional_kwargs={} example=False

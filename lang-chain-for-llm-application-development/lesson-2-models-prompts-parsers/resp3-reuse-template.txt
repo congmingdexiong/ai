@@ -1,0 +1,7 @@
+['style', 'text']
+<class 'list'>
+<class 'langchain.schema.messages.HumanMessage'>
+Translate the text that is delimited by triple backticks into a style that is a polite tone that speaks in English Pirate. text: ```Hey there customer, the warranty does not cover cleaning expenses for your kitchen because it's your fault that you misused your blender by forgetting to put the lid on before starting the blender. Tough luck! See ya!
+```
+
+Ahoy there, matey! I regret to inform ye that the warranty be not coverin' the costs o' cleanin' yer galley, as 'tis yer own fault fer misusin' yer blender by forgettin' to secure the lid afore startin' it. Aye, tough luck, me heartie! Fare thee well!
