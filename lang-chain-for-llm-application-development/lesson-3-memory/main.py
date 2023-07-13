@@ -40,19 +40,21 @@ print(conversation.predict(input="What is my name"))
 print(memory.load_memory_variables({}))
 
 memory = ConversationBufferMemory()
-memory.save_context({"input":"Hi"},{"output":"what's up"})
+memory.save_context({"input": "Hi"}, {"output": "what's up"})
 print(memory)
 print(memory.load_memory_variables({}))
 
-#仅仅记住一次 传入这个memory不能记住上下文了
-from langchain.memory import  ConversationBufferWindowMemory
+# 仅仅记住一次 传入这个memory不能记住上下文了
+from langchain.memory import ConversationBufferWindowMemory
+
 memory = ConversationBufferWindowMemory(k=1)
-memory.save_context({"input":"Hi"},{"output":"what's up"})
-memory.save_context({"input":"Hi1"},{"output":"what's up1"})
+memory.save_context({"input": "Hi"}, {"output": "what's up"})
+memory.save_context({"input": "Hi1"}, {"output": "what's up1"})
 print("仅仅记住一次")
 print(memory.load_memory_variables({}))
 #  限制token数量，进行测试
 from langchain.memory import ConversationTokenBufferMemory
+
 memory = ConversationTokenBufferMemory(llm=llm, max_token_limit=30)
 memory.save_context({"input": "AI is what?!"},
                     {"output": "Amazing!"})
@@ -76,7 +78,7 @@ At Noon, lunch at the italian resturant with a customer who is driving \
 from over an hour away to meet you to understand the latest in AI. \
 Be sure to bring your laptop to show the latest LLM demo."
 
-memory = ConversationSummaryBufferMemory(llm=llm, max_token_limit=100)   #使用对话摘要缓存记忆
+memory = ConversationSummaryBufferMemory(llm=llm, max_token_limit=100)  # 使用对话摘要缓存记忆
 memory.save_context({"input": "Hello"}, {"output": "What's up"})
 memory.save_context({"input": "Not much, just hanging"},
                     {"output": "Cool"})
@@ -87,10 +89,8 @@ print(memory.load_memory_variables({}))
 
 conversation = ConversationChain(
     llm=llm,
-    memory = memory,
+    memory=memory,
     verbose=True
 )
 print(conversation.predict(input="What would be a good demo to show?"))
 print(memory.load_memory_variables({}))
-
-
