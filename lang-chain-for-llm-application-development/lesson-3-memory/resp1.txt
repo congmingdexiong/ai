@@ -1,0 +1,33 @@
+Hello Andrew! It's nice to meet you. How can I assist you today?
+1+1 is equal to 2.
+Your name is Andrew.
+{'history': "Human: Hi, my name is Andrew\nAI: Hello Andrew! It's nice to meet you. How can I assist you today?\nHuman: What is 1+1\nAI: 1+1 is equal to 2.\nHuman: What is my name\nAI: Your name is Andrew."}
+chat_memory=ChatMessageHistory(messages=[HumanMessage(content='Hi', additional_kwargs={}, example=False), AIMessage(content="what's up", additional_kwargs={}, example=False)]) output_key=None input_key=None return_messages=False human_prefix='Human' ai_prefix='AI' memory_key='history'
+{'history': "Human: Hi\nAI: what's up"}
+仅仅记住一次
+{'history': "Human: Hi1\nAI: what's up1"}
+限制token数量，进行测试
+{'history': 'AI: Beautiful!\nHuman: Chatbots are what?\nAI: Charming!'}
+ConversationSummaryBufferMemory:
+{'history': 'System: The human and AI exchange greetings. The human asks about the schedule for the day. The AI provides a detailed schedule, including a meeting with the product team, work on the LangChain project, and a lunch meeting with a customer interested in AI. The AI emphasizes the importance of bringing a laptop to showcase the latest LLM demo during the lunch meeting.'}
+
+
+> Entering new  chain...
+Prompt after formatting:
+The following is a friendly conversation between a human and an AI. The AI is talkative and provides lots of specific details from its context. If the AI does not know the answer to a question, it truthfully says it does not know.
+
+Current conversation:
+System: The human and AI exchange greetings. The human asks about the schedule for the day. The AI provides a detailed schedule, including a meeting with the product team, work on the LangChain project, and a lunch meeting with a customer interested in AI. The AI emphasizes the importance of bringing a laptop to showcase the latest LLM demo during the lunch meeting.
+Human: What would be a good demo to show?
+AI:
+
+> Finished chain.
+A good demo to show during the lunch meeting with the customer interested in AI would be the latest LLM (Language Model) demo. The LLM is a cutting-edge AI model that can generate human-like text based on a given prompt. It has been trained on a vast amount of data and can generate coherent and contextually relevant responses. By showcasing the LLM demo, you can demonstrate the capabilities of our AI technology and how it can be applied to various industries and use cases.
+{'history': 'System: The human and AI exchange greetings and discuss the schedule for the day.
+The AI provides a detailed schedule, including a meeting with the product team, work on the LangChain project,
+and a lunch meeting with a customer interested in AI. The AI emphasizes the importance of bringing a laptop to showcase
+the latest LLM demo during the lunch meeting. The human asks what would be a good demo to show, and the AI suggests
+showcasing the latest LLM (Language Model) demo. The LLM is a cutting-edge AI model that can generate human-like text
+based on a given prompt. It has been trained on a vast amount of data and can generate coherent and contextually relevant
+ responses. By showcasing the LLM demo, the human can demonstrate the capabilities of their AI technology and how it can
+ be applied to various industries and use cases.'}
