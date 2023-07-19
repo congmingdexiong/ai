@@ -212,7 +212,8 @@ for p_info in prompt_infos:
 
 destinations = [f"{p['name']}: {p['description']}" for p in prompt_infos]
 destinations_str = "\n".join(destinations)
-
+print("destinations_str:")
+print(destinations_str)
 default_prompt = ChatPromptTemplate.from_template("{input}")
 default_chain = LLMChain(llm=llm, prompt=default_prompt)
 
