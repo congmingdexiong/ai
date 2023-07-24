@@ -1,0 +1,19 @@
+| Name | Description |
+| --- | --- |
+| Men's Tropical Plaid Short-Sleeve Shirt | UPF 50+ rated sun protection, 100% polyester fabric, wrinkle-resistant, front and back cape venting, two front bellows pockets |
+| Men's Plaid Tropic Shirt, Short-Sleeve | UPF 50+ rated sun protection, 52% polyester and 48% nylon fabric, wrinkle-free, quickly evaporates perspiration, front and back cape venting, two front bellows pockets |
+| Sun Shield Shirt by | UPF 50+ rated sun protection, 78% nylon and 22% Lycra Xtra Life fiber fabric, wicks moisture for quick-drying comfort, abrasion resistant, fits comfortably over swimsuit |
+| Men's TropicVibe Shirt, Short-Sleeve | UPF 50+ rated sun protection, 71% Nylon and 29% Polyester fabric, wrinkle resistant, front and back cape venting, two front bellows pockets |
+
+All four shirts provide UPF 50+ rated sun protection, blocking 98% of the sun's harmful rays. The fabrics used vary from 100% polyester, 52% polyester and
+1536
+[-0.02194717898964882, 0.006735079921782017, -0.01816144771873951, -0.03916534036397934, -0.014086442068219185]
+4
+page_content=': 255\nname: Sun Shield Shirt by\ndescription: "Block the sun, not the fun – our high-performance sun shirt is guaranteed to protect from harmful UV rays. \r\n\r\nSize & Fit: Slightly Fitted: Softly shapes the body. Falls at hip.\r\n\r\nFabric & Care: 78% nylon, 22% Lycra Xtra Life fiber. UPF 50+ rated – the highest rated sun protection possible. Handwash, line dry.\r\n\r\nAdditional Features: Wicks moisture for quick-drying comfort. Fits comfortably over your favorite swimsuit. Abrasion resistant for season after season of wear. Imported.\r\n\r\nSun Protection That Won\'t Wear Off\r\nOur high-performance fabric provides SPF 50+ sun protection, blocking 98% of the sun\'s harmful rays. This fabric is recommended by The Skin Cancer Foundation as an effective UV protectant.' metadata={'source': 'OutdoorClothingCatalog_1000.csv', 'row': 255}
+
+
+> Entering new  chain...
+Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 1.0 seconds as it raised APIConnectionError: Error communicating with OpenAI: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1002)'))).
+
+> Finished chain.
+| Shirt ID | Shirt Name                                 | Description
