@@ -1,0 +1,151 @@
+ warnings.warn(
+[{'query': "What is the description of the Women's Campside Oxfords?", 'answer': 'The ultracomfortable lace-to-toe Oxford boasts a super-soft canvas, thick cushioning, and quality construction for a broken-in feel from the first time you put them on.'}, {'query': 'What are the dimensions of the small and medium sizes of the Recycled Waterhog dog mat?', 'answer': 'The small size of the Recycled Waterhog dog mat has dimensions of 18" x 28", while the medium size has dimensions of 22.5" x 34.5".'}, {'query': "What are some features of the Infant and Toddler Girls' Coastal Chill Swimsuit, Two-Piece?", 'answer': "Some features of the Infant and Toddler Girls' Coastal Chill Swimsuit, Two-Piece include bright colors, ruffles, exclusive whimsical prints, four-way-stretch and chlorine-resistant fabric, UPF 50+ rated fabric for sun protection, crossover no-slip straps, fully lined bottom for a secure fit and maximum coverage, and it can be machine washed and line dried for best results."}, {'query': 'What is the fabric composition of the Refresh Swimwear, V-Neck Tankini Contrasts?', 'answer': 'The Refresh Swimwear, V-Neck Tankini Contrasts is made of 82% recycled nylon and 18% Lycra® spandex for the body, and 90% recycled nylon with 10% Lycra® spandex for the lining.'}, {'query': 'What is the name of the waterproof pants described in the document?', 'answer': 'The name of the waterproof pants described in the document is EcoFlex 3L Storm Pants.'}]
+[chain/start] [1:chain:RetrievalQA] Entering Chain run with input:
+{
+  "query": "Do the Cozy Comfort Pullover Set        have side pockets?"
+}
+[chain/start] [1:chain:RetrievalQA > 3:chain:StuffDocumentsChain] Entering Chain run with input:
+[inputs]
+[chain/start] [1:chain:RetrievalQA > 3:chain:StuffDocumentsChain > 4:chain:LLMChain] Entering Chain run with input:
+{
+  "question": "Do the Cozy Comfort Pullover Set        have side pockets?",
+  "context": ": 10\nname: Cozy Comfort Pullover Set, Stripe\ndescription: Perfect for lounging, this striped knit set lives up to its name. We used ultrasoft fabric and an easy design that's as comfortable at bedtime as it is when we have to make a quick run out.\r\n\r\nSize & Fit\r\n- Pants are Favorite Fit: Sits lower on the waist.\r\n- Relaxed Fit: Our most generous fit sits farthest from the body.\r\n\r\nFabric & Care\r\n- In the softest blend of 63% polyester, 35% rayon and 2% spandex.\r\n\r\nAdditional Features\r\n- Relaxed fit top with raglan sleeves and rounded hem.\r\n- Pull-on pants have a wide elastic waistband and drawstring, side pockets and a modern slim leg.\r\n\r\nImported.<<<<>>>>>: 73\nname: Cozy Cuddles Knit Pullover Set\ndescription: Perfect for lounging, this knit set lives up to its name. We used ultrasoft fabric and an easy design that's as comfortable at bedtime as it is when we have to make a quick run out. \r\n\r\nSize & Fit \r\nPants are Favorite Fit: Sits lower on the waist. \r\nRelaxed Fit: Our most generous fit sits farthest from the body. \r\n\r\nFabric & Care \r\nIn the softest blend of 63% polyester, 35% rayon and 2% spandex.\r\n\r\nAdditional Features \r\nRelaxed fit top with raglan sleeves and rounded hem. \r\nPull-on pants have a wide elastic waistband and drawstring, side pockets and a modern slim leg. \r\nImported.<<<<>>>>>: 632\nname: Cozy Comfort Fleece Pullover\ndescription: The ultimate sweater fleece – made from superior fabric and offered at an unbeatable price. \r\n\r\nSize & Fit\r\nSlightly Fitted: Softly shapes the body. Falls at hip. \r\n\r\nWhy We Love It\r\nOur customers (and employees) love the rugged construction and heritage-inspired styling of our popular Sweater Fleece Pullover and wear it for absolutely everything. From high-intensity activities to everyday tasks, you'll find yourself reaching for it every time.\r\n\r\nFabric & Care\r\nRugged sweater-knit exterior and soft brushed interior for exceptional warmth and comfort. Made from soft, 100% polyester. Machine wash and dry.\r\n\r\nAdditional Features\r\nFeatures our classic Mount Katahdin logo. Snap placket. Front princess seams create a feminine shape. Kangaroo handwarmer pockets. Cuffs and hem reinforced with jersey binding. Imported.\r\n\r\n – Official Supplier to the U.S. Ski Team\r\nTHEIR WILL TO WIN, WOVEN RIGHT IN. LEARN MORE<<<<>>>>>: 265\nname: Cozy Workout Vest\ndescription: For serious warmth that won't weigh you down, reach for this fleece-lined vest, which provides you with layering options whether you're inside or outdoors.\r\nSize & Fit\r\nRelaxed Fit. Falls at hip.\r\nFabric & Care\r\nSoft, textured fleece lining. Nylon shell. Machine wash and dry. \r\nAdditional Features \r\nTwo handwarmer pockets. Knit side panels stretch for a more flattering fit. Shell fabric is treated to resist water and stains. Imported."
+}
+[llm/start] [1:chain:RetrievalQA > 3:chain:StuffDocumentsChain > 4:chain:LLMChain > 5:llm:ChatOpenAI] Entering LLM run with input:
+{
+  "prompts": [
+    "System: Use the following pieces of context to answer the users question. \nIf you don't know the answer, just say that you don't know, don't try to make up an answer.\n----------------\n: 10\nname: Cozy Comfort Pullover Set, Stripe\ndescription: Perfect for lounging, this striped knit set lives up to its name. We used ultrasoft fabric and an easy design that's as comfortable at bedtime as it is when we have to make a quick run out.\r\n\r\nSize & Fit\r\n- Pants are Favorite Fit: Sits lower on the waist.\r\n- Relaxed Fit: Our most generous fit sits farthest from the body.\r\n\r\nFabric & Care\r\n- In the softest blend of 63% polyester, 35% rayon and 2% spandex.\r\n\r\nAdditional Features\r\n- Relaxed fit top with raglan sleeves and rounded hem.\r\n- Pull-on pants have a wide elastic waistband and drawstring, side pockets and a modern slim leg.\r\n\r\nImported.<<<<>>>>>: 73\nname: Cozy Cuddles Knit Pullover Set\ndescription: Perfect for lounging, this knit set lives up to its name. We used ultrasoft fabric and an easy design that's as comfortable at bedtime as it is when we have to make a quick run out. \r\n\r\nSize & Fit \r\nPants are Favorite Fit: Sits lower on the waist. \r\nRelaxed Fit: Our most generous fit sits farthest from the body. \r\n\r\nFabric & Care \r\nIn the softest blend of 63% polyester, 35% rayon and 2% spandex.\r\n\r\nAdditional Features \r\nRelaxed fit top with raglan sleeves and rounded hem. \r\nPull-on pants have a wide elastic waistband and drawstring, side pockets and a modern slim leg. \r\nImported.<<<<>>>>>: 632\nname: Cozy Comfort Fleece Pullover\ndescription: The ultimate sweater fleece – made from superior fabric and offered at an unbeatable price. \r\n\r\nSize & Fit\r\nSlightly Fitted: Softly shapes the body. Falls at hip. \r\n\r\nWhy We Love It\r\nOur customers (and employees) love the rugged construction and heritage-inspired styling of our popular Sweater Fleece Pullover and wear it for absolutely everything. From high-intensity activities to everyday tasks, you'll find yourself reaching for it every time.\r\n\r\nFabric & Care\r\nRugged sweater-knit exterior and soft brushed interior for exceptional warmth and comfort. Made from soft, 100% polyester. Machine wash and dry.\r\n\r\nAdditional Features\r\nFeatures our classic Mount Katahdin logo. Snap placket. Front princess seams create a feminine shape. Kangaroo handwarmer pockets. Cuffs and hem reinforced with jersey binding. Imported.\r\n\r\n – Official Supplier to the U.S. Ski Team\r\nTHEIR WILL TO WIN, WOVEN RIGHT IN. LEARN MORE<<<<>>>>>: 265\nname: Cozy Workout Vest\ndescription: For serious warmth that won't weigh you down, reach for this fleece-lined vest, which provides you with layering options whether you're inside or outdoors.\r\nSize & Fit\r\nRelaxed Fit. Falls at hip.\r\nFabric & Care\r\nSoft, textured fleece lining. Nylon shell. Machine wash and dry. \r\nAdditional Features \r\nTwo handwarmer pockets. Knit side panels stretch for a more flattering fit. Shell fabric is treated to resist water and stains. Imported.\nHuman: Do the Cozy Comfort Pullover Set        have side pockets?"
+  ]
+}
+[llm/end] [1:chain:RetrievalQA > 3:chain:StuffDocumentsChain > 4:chain:LLMChain > 5:llm:ChatOpenAI] [923.1179999999999ms] Exiting LLM run with output:
+{
+  "generations": [
+    [
+      {
+        "text": "Yes, the Cozy Comfort Pullover Set does have side pockets.",
+        "generation_info": null,
+        "message": {
+          "lc": 1,
+          "type": "constructor",
+          "id": [
+            "langchain",
+            "schema",
+            "messages",
+            "AIMessage"
+          ],
+          "kwargs": {
+            "content": "Yes, the Cozy Comfort Pullover Set does have side pockets.",
+            "additional_kwargs": {}
+          }
+        }
+      }
+    ]
+  ],
+  "llm_output": {
+    "token_usage": {
+      "prompt_tokens": 717,
+      "completion_tokens": 14,
+      "total_tokens": 731
+    },
+    "model_name": "gpt-3.5-turbo"
+  },
+  "run": null
+}
+[chain/end] [1:chain:RetrievalQA > 3:chain:StuffDocumentsChain > 4:chain:LLMChain] [924.125ms] Exiting Chain run with output:
+{
+  "text": "Yes, the Cozy Comfort Pullover Set does have side pockets."
+}
+[chain/end] [1:chain:RetrievalQA > 3:chain:StuffDocumentsChain] [924.125ms] Exiting Chain run with output:
+{
+  "output_text": "Yes, the Cozy Comfort Pullover Set does have side pockets."
+}
+[chain/end] [1:chain:RetrievalQA] [1.27s] Exiting Chain run with output:
+{
+  "result": "Yes, the Cozy Comfort Pullover Set does have side pockets."
+}
+
+
+> Entering new  chain...
+
+> Finished chain.
+
+
+> Entering new  chain...
+
+> Finished chain.
+
+
+> Entering new  chain...
+
+> Finished chain.
+
+
+> Entering new  chain...
+
+> Finished chain.
+
+
+> Entering new  chain...
+
+> Finished chain.
+
+
+> Entering new  chain...
+
+> Finished chain.
+
+
+> Entering new  chain...
+
+> Finished chain.
+Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 1.0 seconds as it raised ServiceUnavailableError: The server is overloaded or not ready yet..
+Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 2.0 seconds as it raised ServiceUnavailableError: The server is overloaded or not ready yet..
+Example 0:
+Question: Do the Cozy Comfort Pullover Set        have side pockets?
+Real Answer: Yes
+Predicted Answer: Yes, the Cozy Comfort Pullover Set does have side pockets.
+Predicted Grade: CORRECT
+
+Example 1:
+Question: What collection is the Ultra-Lofty         850 Stretch Down Hooded Jacket from?
+Real Answer: The DownTek collection
+Predicted Answer: The Ultra-Lofty 850 Stretch Down Hooded Jacket is from the DownTek collection.
+Predicted Grade: CORRECT
+
+Example 2:
+Question: What is the description of the Women's Campside Oxfords?
+Real Answer: The ultracomfortable lace-to-toe Oxford boasts a super-soft canvas, thick cushioning, and quality construction for a broken-in feel from the first time you put them on.
+Predicted Answer: The description of the Women's Campside Oxfords is: "This ultracomfortable lace-to-toe Oxford boasts a super-soft canvas, thick cushioning, and quality construction for a broken-in feel from the first time you put them on."
+Predicted Grade: CORRECT
+
+Example 3:
+Question: What are the dimensions of the small and medium sizes of the Recycled Waterhog dog mat?
+Real Answer: The small size of the Recycled Waterhog dog mat has dimensions of 18" x 28", while the medium size has dimensions of 22.5" x 34.5".
+Predicted Answer: The dimensions of the small size of the Recycled Waterhog dog mat are 18" x 28". The dimensions of the medium size are 22.5" x 34.5".
+Predicted Grade: CORRECT
+
+Example 4:
+Question: What are some features of the Infant and Toddler Girls' Coastal Chill Swimsuit, Two-Piece?
+Real Answer: Some features of the Infant and Toddler Girls' Coastal Chill Swimsuit, Two-Piece include bright colors, ruffles, exclusive whimsical prints, four-way-stretch and chlorine-resistant fabric, UPF 50+ rated fabric for sun protection, crossover no-slip straps, fully lined bottom for a secure fit and maximum coverage, and it can be machine washed and line dried for best results.
+Predicted Answer: Some features of the Infant and Toddler Girls' Coastal Chill Swimsuit, Two-Piece are:
+- Bright colors and ruffles
+- Exclusive whimsical prints
+- Four-way-stretch and chlorine-resistant fabric
+- UPF 50+ rated fabric for sun protection
+- Crossover no-slip straps
+- Fully lined bottom for secure fit and maximum coverage
+- Machine washable and line dry for best results
+- Imported
+Predicted Grade: CORRECT
+
+Example 5:
+Question: What is the fabric composition of the Refresh Swimwear, V-Neck Tankini Contrasts?
+Real Answer: The Refresh Swimwear, V-Neck Tankini Contrasts is made of 82% recycled nylon and 18% Lycra® spandex for the body, and 90% recycled nylon with 10% Lycra® spandex for the lining.
+Predicted Answer: The fabric composition of the Refresh Swimwear, V-Neck Tankini Contrasts is 82% recycled nylon with 18% Lycra® spandex for the body, and 90% recycled nylon with 10% Lycra® spandex for the lining.
+Predicted Grade: CORRECT
+
+Example 6:
+Question: What is the name of the waterproof pants described in the document?
+Real Answer: The name of the waterproof pants described in the document is EcoFlex 3L Storm Pants.
+Predicted Answer: The name of the waterproof pants described in the document are "Women's Waterproof Hiking Trousers" and "SnowShield Pants".
+Predicted Grade: CORRECT
